@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class station extends Component {
-
-    render() {
-      return (
-          <div>
-              <h3> Voc </h3>
-          </div>
-      );
-    }
-  }
+function Voc() {
+  return <div><h3> Voc </h3></div>;
+}
   
-  export default station;
+export default Voc;
