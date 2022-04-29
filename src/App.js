@@ -4,6 +4,7 @@ import Navbar from'./components/Navbar';
 import Home from'./pages/Home';
 import Station from'./pages/Station';
 import Voc from'./pages/Voc';
+import VocView from './pages/VocView';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route path='/station' element={<Station />} />
           <Route path='/voc' element={<Voc />} />
+          <Route path='/voc/:vocId' element={<VocView />}  />
         </Routes>
       </Router>
       </>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import CommonTable from '../components/table/CommonTable';
 import CommonTableColumn from '../components/table/CommonTableColumn';
@@ -13,12 +14,16 @@ function GetData() {
     })
   }, []);
 
-  const item = (Object.values(data)).map((item) => (
-    <CommonTableRow key={item.id}>
-      <CommonTableColumn>{item.id}</CommonTableColumn>
-      <CommonTableColumn>{item.title}</CommonTableColumn>
-      <CommonTableColumn>{item.createAt}</CommonTableColumn>
-      <CommonTableColumn>{item.username}</CommonTableColumn>
+  const item = (Object.values(data)).map((voc) => (
+    <CommonTableRow key={voc.id}>
+      <CommonTableColumn>{voc.id}</CommonTableColumn>
+      <CommonTableColumn>
+        <Link to={`/voc/${voc.id}`}>
+          {voc.title}
+        </Link>
+      </CommonTableColumn>
+      <CommonTableColumn>{voc.createAt}</CommonTableColumn>
+      <CommonTableColumn>{voc.username}</CommonTableColumn>
     </CommonTableRow>
   ));
 
