@@ -1,10 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 import Navbar from'./components/Navbar';
 import Home from'./pages/Home';
 import Station from'./pages/Station';
-import Voc from'./pages/Voc';
-import VocView from './pages/VocView';
+import Voc from'./pages/voc/Voc';
+import VocView from './pages/voc/VocView';
+import VocQuestion from './pages/voc/VocQuestion';
 
 function App() {
 

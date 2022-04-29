@@ -28,7 +28,7 @@ function GetData(vocId) {
         </div>
         <div className="voc-view-row">
             <label>작성일</label>
-            <label>{ question.createDate }</label>
+            <label>{ question.createdAt }</label>
         </div>
         <div className="voc-view-row">
             <label>내용</label>
