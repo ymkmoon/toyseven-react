@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import Navbar from'./components/Navbar';
 import Home from'./pages/Home';
-import Station from'./pages/Station';
+import Station from'./pages/station/Station';
 import Voc from'./pages/voc/Voc';
 import VocView from './pages/voc/VocView';
 import VocQuestion from './pages/voc/VocQuestion';
