@@ -22,16 +22,17 @@ function GetCategory() {
 }
 
 const HandleQuestionSubmit = async({body}) => {
-  console.log('body : '+JSON.stringify(body));
   const response = await axios.post('http://127.0.0.1:8000/toyseven/voc', body).then((response) => {
-    console.log('response status : '+response.status);
+    console.log('status : '+response.status);
+  }).catch((error) => {
+    console.log('error : '+error);
   });
 }
 
 function VocQuestion() {
   const categories = GetCategory();
 
-  const [category, setCategory] = useState(1);
+  const [categoryId, setCategoryId] = useState(1);
   const [title, setTitle] = useState('');
   const [email, setEmail] = useState('');
   const [content, setContent] = useState('');
@@ -39,7 +40,7 @@ function VocQuestion() {
   const [stationId, setStationId] = useState('ST-4');
 
   const body = {
-      category : category,
+      categoryId : categoryId,
       title: title,
       content: content,
       username: username,
@@ -52,7 +53,7 @@ function VocQuestion() {
     <div className="voc-view-wrapper">
         <div className="voc-view-row">
             <label>문의 유형</label>
-            <select onChange={(event) => setCategory(parseInt(event.target.value))}>
+            <select onChange={(event) => setCategoryId(parseInt(event.target.value))}>
               {categories}
             </select>
         </div>
