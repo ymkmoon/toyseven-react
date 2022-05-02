@@ -19,6 +19,7 @@ function App() {
           <Route path='/station' element={<Station />} />
           <Route path='/voc' element={<Voc />} />
           <Route path='/voc/:vocId' element={<VocView />}  />
+          <Route path='/voc/question' element={<VocQuestion />}  />
         </Routes>
       </Router>
       </>
