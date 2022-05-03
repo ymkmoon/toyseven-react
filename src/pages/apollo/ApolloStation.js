@@ -13,7 +13,7 @@ const client = new ApolloClient({
 
 const query = gql`
   query getStations {
-    station 
+    stations 
       @rest(
           type: "Station" 
           path: "/stations" 
@@ -33,7 +33,7 @@ function GetData() {
   });
 
   const item = stations && Object.values(stations).map((item) => (
-    <li key={item}>
+    <li key={item.stationId}>
       {item.stationName}
     </li> 
   ));
