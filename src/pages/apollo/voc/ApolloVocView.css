@@ -1,0 +1,26 @@
+.voc-view-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.voc-view-go-list-btn {
+    border: 0;
+    padding: 10px;
+    background-color: #ffd9d9;
+}
+
+.voc-view-row {
+    margin: 10px 0;
+    display: flex;
+}
+
+.voc-view-row>label:first-child {
+    margin: 10px 0;
+    width: 30%;
+    font-weight: bold;
+}
+
+.voc-view-row>*:nth-child(2) {
+    margin: 10px 0;
+    width: 70%;
+}
