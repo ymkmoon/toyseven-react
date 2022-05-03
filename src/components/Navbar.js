@@ -58,11 +58,33 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
+                        <Link to='/apollo/station' className='nav-links' onClick = {closeMobileMenu}>
+                            Apollo Station
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/apollo/voc' className='nav-links' onClick = {closeMobileMenu}>
+                            Apollo Voc
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
                         <Link to='/sign-up' className='nav-links-mobile' onClick = {closeMobileMenu}>
                             Sign Up
                         </Link>
                     </li>
                 </ul>
+                {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className='nav-item'>
+                        <Link to='/station' className='nav-links' onClick = {closeMobileMenu}>
+                            Station
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/voc' className='nav-links' onClick = {closeMobileMenu}>
+                            Voc
+                        </Link>
+                    </li>
+                </ul> */}
                 {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
             </div>
         </nav>
