@@ -73,18 +73,6 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                {/* <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className='nav-item'>
-                        <Link to='/station' className='nav-links' onClick = {closeMobileMenu}>
-                            Station
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/voc' className='nav-links' onClick = {closeMobileMenu}>
-                            Voc
-                        </Link>
-                    </li>
-                </ul> */}
                 {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
             </div>
         </nav>
