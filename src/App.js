@@ -7,7 +7,7 @@ import Station from'./pages/station/Station';
 import Voc from'./pages/voc/Voc';
 import VocView from './pages/voc/VocView';
 import VocQuestion from './pages/voc/VocQuestion';
-import ApolloSample from './pages/apollo/ApolloStation';
+import ApolloSample from './pages/apollo/station/ApolloStation';
 
 function App() {
 
