@@ -10,6 +10,7 @@ import VocQuestion from './pages/voc/VocQuestion';
 import ApolloStation from './pages/apollo/station/ApolloStation';
 import ApolloVoc from './pages/apollo/voc/ApolloVoc';
 import ApolloVocView from './pages/apollo/voc/ApolloVocView';
+import ApolloVocQuestion from './pages/apollo/voc/ApolloVocQuestion';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/apollo/station' element={<ApolloStation />}  />
           <Route path='/apollo/voc' element={<ApolloVoc />}  />
           <Route path='/apollo/voc/:vocId' element={<ApolloVocView />}  />
+          <Route path='/apollo/voc/question' element={<ApolloVocQuestion />}  />
         </Routes>
       </Router>
       </>

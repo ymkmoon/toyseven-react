@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import CommonTable from '../../../components/table/CommonTable';
 import CommonTableColumn from '../../../components/table/CommonTableColumn';
 import CommonTableRow from '../../../components/table/CommonTableRow';
-import VocHeader from '../../../components/voc/VocHeader';
+import ApolloVocHeader from '../../../components/apollo/voc/ApolloVocHeader';
 
 // Set `RestLink` with your endpoint
 const restLink = new RestLink({ uri: "http://127.0.0.1:8000/toyseven" });
@@ -61,7 +61,7 @@ function ApolloVoc() {
   const item = GetData();
 
   return (<>
-    <VocHeader></VocHeader>
+    <ApolloVocHeader></ApolloVocHeader>
     <CommonTable headersName={['글번호', '제목', '등록일', '작성자']}>
       {item}
     </CommonTable>
