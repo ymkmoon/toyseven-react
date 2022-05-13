@@ -45,10 +45,11 @@ function GetData() {
 function ApolloStation() {
   const item = GetData();
 
-  return (<div><ul>
-    {item}
+  return (<>
+    <ul>
+      {item}
     </ul>
-  </div>);
+  </>);
 }
   
 export default ApolloStation;

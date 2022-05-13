@@ -23,10 +23,11 @@ function GetData() {
 
 function Station() {
   const item = GetData();
-  return (<div><ul>
-    {item}
+  return (<>
+    <ul>
+      {item}
     </ul>
-  </div>);  
+  </>);  
 }
   
 export default Station;

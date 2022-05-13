@@ -88,25 +88,25 @@ function ApolloVocQuestion() {
   return (<>
     <h2 align="center">게시글 작성</h2>
     <div className="voc-view-wrapper">
-        <div className="voc-view-row">
-            <label>문의 유형</label>
-            <select onChange={(event) => setCategoryId(event.target.value)}>
-              {categories}
-            </select>
-        </div>
-        <div className="voc-view-row">
-            <label>email</label>
-            <input onChange={(event) => setEmail(event.target.value)}></input>
-        </div>
-        <div className="voc-view-row">
-            <label>제목</label>
-            <input onChange={(event) => setTitle(event.target.value)}></input>
-        </div>
-        <div className="voc-view-row">
-            <label>내용</label>
-            <textarea onChange={(event) => setContent(event.target.value)}></textarea>
-        </div>
-    <button className="voc-view-go-list-btn" onClick={() => HandleQuestionSubmit({body})}>등록</button>
+      <div className="voc-view-row">
+          <label>문의 유형</label>
+          <select onChange={(event) => setCategoryId(event.target.value)}>
+            {categories}
+          </select>
+      </div>
+      <div className="voc-view-row">
+          <label>email</label>
+          <input onChange={(event) => setEmail(event.target.value)}></input>
+      </div>
+      <div className="voc-view-row">
+          <label>제목</label>
+          <input onChange={(event) => setTitle(event.target.value)}></input>
+      </div>
+      <div className="voc-view-row">
+          <label>내용</label>
+          <textarea onChange={(event) => setContent(event.target.value)}></textarea>
+      </div>
+      <button className="voc-view-go-list-btn" onClick={() => HandleQuestionSubmit({body})}>등록</button>
     </div>
     </>);
 }
