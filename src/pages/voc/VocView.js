@@ -48,9 +48,7 @@ function VocView() {
   const item = GetData(vocId);
 
   return (<>
-    <div>
-        {item}
-    </div>
+    {item}
   </>);
 }
   
