@@ -13,7 +13,7 @@ function GetData(vocId) {
         setQuestion(response.data.question);
         setAnswer(response.data.answer);
     })
-  }, []);
+  }, [vocId]);
 
   const item =  (<>
     <h2 align="center">게시글 상세정보</h2>
