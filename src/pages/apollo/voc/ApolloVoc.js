@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useState, useEffect } from 'react';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { RestLink } from 'apollo-link-rest';
 import { Link } from 'react-router-dom';
@@ -18,7 +18,7 @@ const client = new ApolloClient({
 });
 
 const query = gql`
-  query getQuestions {
+  mutation getQuestions {
     questions 
       @rest(
           type: "Question" 
@@ -36,9 +36,11 @@ const query = gql`
 
 function GetData() {
   const [questions, setQuestions] = useState({});
-  client.query({ query }).then(response => {
-    setQuestions(response.data.questions);
-  });
+  useEffect(() => {
+    client.mutate({ mutation: query }).then(response => {
+      setQuestions(response.data.questions);
+    });
+  }, [])
 
   const item = questions && Object.values(questions).map((voc) => (
     <CommonTableRow key={voc.id}>
