@@ -26,7 +26,7 @@ const categoryQuery = gql`
 `;
 
 const questionSubmitQuery = gql`
-  query submitQuestion($body: PublishablePostInput!) {
+  mutation submitQuestion($body: PublishablePostInput!) {
     question(body: $body) 
       @rest(
           type: "Question" 
@@ -59,7 +59,7 @@ function GetCategory() {
 }
 
 const HandleQuestionSubmit = async({body}) => {
-  const response = await client.query({ query: questionSubmitQuery, variables: {body: body} }).then(response => {
+  const response = await client.mutate({ mutation: questionSubmitQuery, variables: {body: body} }).then(response => {
     console.log('response : '+JSON.stringify(response));
   }).catch((error) => {
     console.log('error : '+error);
