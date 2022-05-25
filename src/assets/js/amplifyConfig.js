@@ -1,6 +1,6 @@
 const CognitoRegion = 'ap-northeast-2';
-const CognitoUserPool = 'ap-northeast-2_p5HpK6s6k';
-const CognitoUserPoolClient = '7vtob3c7drttlqci74st2npf3g';
+const CognitoUserPool = 'ap-northeast-2_xxxxxxxx';
+const CognitoUserPoolClient = 'xxxxxxxxxxxxxxxxxxxxxxxxxx';
 const CognitoDomainPrefix = 'toyseven-domain';
 
 const AmplifyConfig = {
