@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import Navbar from'./components/Navbar';
 import Home from'./pages/Home';
+import SignUp from'./pages/SignUp';
 import Station from'./pages/station/Station';
 import Voc from'./pages/voc/Voc';
 import VocView from './pages/voc/VocView';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/apollo/voc' element={<ApolloVoc />}  />
           <Route path='/apollo/voc/:vocId' element={<ApolloVocView />}  />
           <Route path='/apollo/voc/question' element={<ApolloVocQuestion />}  />
+          <Route path='/sign-up' element={<SignUp />}  />
         </Routes>
       </Router>
       </>
