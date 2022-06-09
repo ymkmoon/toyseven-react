@@ -2,6 +2,7 @@
   "name": "toyseven-react",
   "version": "0.1.0",
   "private": true,
+  "proxy" : "http://localhost:8000",
   "dependencies": {
     "@apollo/client": "^3.6.1",
     "@aws-amplify/ui-react": "^1.2.5",

@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 import './ApolloVocView.css';
 
-const restLink = new RestLink({ uri: "http://127.0.0.1:8000/toyseven" });
+const restLink = new RestLink({ uri: "/toyseven" });
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: restLink
