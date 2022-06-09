@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { RestLink } from 'apollo-link-rest';
 
 // Set `RestLink` with your endpoint
-const restLink = new RestLink({ uri: "http://127.0.0.1:8000/toyseven" });
+const restLink = new RestLink({ uri: "/toyseven" });
 
 // Setup your client
 const client = new ApolloClient({

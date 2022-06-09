@@ -4,7 +4,7 @@ import axios from 'axios';
 function GetData() {
   const [data, setData] = useState({});
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/toyseven/stations').then((response)=> {
+    axios.get('/toyseven/stations').then((response)=> {
       setData(response.data);
     })
   }, []);

@@ -9,7 +9,7 @@ function GetData(vocId) {
   const [answer, setAnswer] = useState({});
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/toyseven/voc/search/'+vocId).then((response)=> {
+    axios.get('/toyseven/voc/search/'+vocId).then((response)=> {
         setQuestion(response.data.question);
         setAnswer(response.data.answer);
     })

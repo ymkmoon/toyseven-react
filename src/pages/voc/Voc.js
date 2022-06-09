@@ -10,7 +10,7 @@ import VocHeader from '../../components/voc/VocHeader';
 function GetData() {
   const [data, setData] = useState({});
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/toyseven/voc').then((response)=> {
+    axios.get('/toyseven/voc').then((response)=> {
       setData(response.data);
     })
   }, []);
