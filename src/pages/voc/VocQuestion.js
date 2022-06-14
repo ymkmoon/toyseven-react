@@ -7,7 +7,7 @@ function GetCategory() {
   const [category, setCategory] = useState({});
 
   useEffect(() => {
-    axios.get('/toyseven/voc/category').then((response)=> {
+    axios.get('/toyseven/voc/categories').then((response)=> {
       setCategory(response.data);
     })
   }, []);

@@ -15,7 +15,7 @@ const categoryQuery = gql`
     categories 
       @rest(
           type: "Category" 
-          path: "/voc/category" 
+          path: "/voc/categories" 
           method: "GET"
       ) {
       id
